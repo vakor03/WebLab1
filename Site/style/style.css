@@ -1,0 +1,108 @@
+ body{
+     padding: 0;
+     margin: 0;
+ }
+ /* header */
+ header{
+    background-color: aqua;
+    height: 50px;
+    padding: 10px;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0;
+     
+ }
+
+ header > h1{
+     margin: 0;
+     background-color: azure;
+     border-radius: 0 20px 0 20px;
+     display:inline;
+     padding: 5px;
+ }
+
+ #wrapper{
+    padding: 0;
+    margin: 0; 
+    margin-left: 25%;
+    height:500px;
+    width:50%;
+    
+    position: absolute;
+ }
+
+ #mainBody{
+     background-color: lightslategray;
+     height: 90%;
+ }
+
+ #addBody{
+    background-color:mediumaquamarine;
+    height: 10%;
+    padding-top: 2%;
+    text-align: center;
+    font-style:italic;
+ }
+
+ #scam{
+     height: 600px;
+     background-color: moccasin;
+     width: 25%;
+     position: absolute;
+     margin-left: 75%;
+ }
+ #footer{
+     margin-top:500px;
+     margin-right: 25%;
+     height: 100px;
+     width: 75%;
+     background-color: olive;
+     position: absolute;
+     
+ }
+
+ /* Menu */
+ #menu{
+
+    padding: 0;
+    margin: 0; 
+    margin-top: 0;
+    height:500px;
+    width:25%;
+    background-color: burlywood;
+    position: absolute;
+ }
+
+ #menu > ol > li{
+     list-style: none;     
+     height: 40px;
+     padding: 0;
+ }
+
+ #menu > ol{
+     margin: 0;
+     padding: 0;
+ }
+
+ #menu > ol> li>a{
+    margin: 0;
+     padding: 0; 
+     display:block;
+     height: 30px;
+     padding: 5px;
+     text-decoration: none;
+     color:black;
+     font-style: italic;
+     font-weight: bold;
+     border-bottom:1px solid black;
+     
+ }
+
+ #menu > ol> li>a:hover{
+    background-color: #3f5d79;
+    border-bottom:1px solid #3f5d79;
+    color:#fff;
+    transition:  300ms all;
+    padding-left:10px;
+    padding-right:0;
+ }
