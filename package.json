@@ -9,7 +9,8 @@
     "format:fix": "npx prettier --write .",
     "lint:style": "stylelint \"src/**/*.+(scss|css|svelte)\"",
     "lint:style:fix": "stylelint \"src/**/*.+(scss|css|svelte)\" --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "stylelint-check": "stylelint-config-prettier-check"
   },
   "author": "",
   "license": "ISC",
