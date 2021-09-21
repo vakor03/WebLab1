@@ -26,8 +26,8 @@
 body {
     display: grid;
     grid-template-areas: var(--body-template-areas);
-    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     margin: var(--zero);
     padding: var(--zero);
 }
@@ -35,12 +35,12 @@ body {
 /* Header */
 
 header {
-    align-items: center;
-    background-color: var(--header-bg-color);
     display: flex;
     grid-area: header;
+    align-items: center;
     justify-content: space-between;
     padding: var(--header-paddings);
+    background-color: var(--header-bg-color);
 }
 
 header > * {
@@ -50,10 +50,10 @@ header > * {
 /* NavigationBar */
 
 nav {
-    background-color: var(--nav-bg-color);
     grid-area: nav;
     margin: var(--zero);
     padding: var(--zero);
+    background-color: var(--nav-bg-color);
 }
 
 nav > ol {
@@ -62,27 +62,27 @@ nav > ol {
 }
 
 nav li {
-    background-color: var(--nav-li-bg);
-    border-bottom: var(--nav-li-border-height) solid var(--nav-li-bg-hover);
     height: var(--nav-li-height);
-    list-style: none;
     margin: var(--zero);
     padding: var(--zero);
+    list-style: none;
+    background-color: var(--nav-li-bg);
+    border-bottom: var(--nav-li-border-height) solid var(--nav-li-bg-hover);
     transition: var(--nav-transition-duration) all;
 }
 
 nav li:hover {
-    background-color: var(--nav-li-bg-hover);
     padding-left: var(--nav-li-padding-left-hover);
+    background-color: var(--nav-li-bg-hover);
 }
 
 nav li > a {
-    color: var(--nav-li-color);
     display: block;
+    width: 100%;
     height: 100%;
     padding: var(--nav-li-a-padding);
+    color: var(--nav-li-color);
     text-decoration: none;
-    width: 100%;
 }
 
 /* Main */
@@ -93,22 +93,21 @@ main {
 }
 
 main > section {
-    background-color: var(--main-section-bg);
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: space-around;
+    height: 100%;
     padding: var(--main-section-padding);
     text-align: right;
+    background-color: var(--main-section-bg);
 }
 
 main > small {
-    background-color: var(--copy-bg);
     height: var(--copy-height);
-    line-height: var(--copy-height);
     margin: var(--zero);
     padding: var(--zero);
     text-align: center;
+    background-color: var(--copy-bg);
 }
 
 main > p {
@@ -118,13 +117,13 @@ main > p {
 
 /* Aside */
 aside {
-    background-color: var(--aside-bg);
     display: flex;
     flex-direction: column;
     grid-area: aside;
     justify-content: space-between;
     padding: var(--aside-padding);
     text-align: right;
+    background-color: var(--aside-bg);
 }
 
 aside > p {
@@ -133,12 +132,12 @@ aside > p {
 
 /* Footer */
 footer {
-    align-items: center;
-    background-color: var(--footer-bg);
     display: flex;
     grid-area: footer;
+    align-items: center;
     justify-content: space-between;
     padding: var(--footer-padding);
+    background-color: var(--footer-bg);
 }
 
 footer > * {
