@@ -21,13 +21,19 @@
     --aside-bg: #b2babb;
     --footer-padding: 20px;
     --footer-bg: #e6b0aa;
+    --header-height: 150px;
+    --footer-height: 150px;
 }
 
+html {
+    height: 100%;
+}
 body {
     display: grid;
     grid-template-areas: var(--body-template-areas);
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: var(--header-height) auto var(--footer-height);
     grid-template-columns: 1fr 3fr 1fr;
+    height: 100%;
     margin: var(--zero);
     padding: var(--zero);
 }
